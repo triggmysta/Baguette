@@ -7,7 +7,7 @@ require('events').EventEmitter.defaultMaxListeners = Infinity;
 
 const client = new Discord.Client();
 
-const music = new Music(client, {
+music = new Music(client, {
 	youtubeKey: process.env.ytapikey, //Youtube Dev API3 Key
 	prefix: config.prefix, maxQueueSize: 100, thumbnailType: 'default', defVolume: 100, anyoneCanSkip: true, messageHelp: true,
 	botOwner: '352384456977285130', helpCmd: 'assist', playCmd: 'play',	skipCmd: 'skip', queueCmd: 'queue',
